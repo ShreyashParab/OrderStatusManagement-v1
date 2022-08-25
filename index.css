@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body{
+    background-image: url('assets/pizza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.container{
+    margin: 20px auto;
+}
+
+.title{
+    text-align: center;
+}
+
+
+.order-search{
+    width: 45vw;
+    margin: auto;
+    /* text-align: center; */
+}
+
+.invalid-orderid{
+margin-left: 22%;
+display: none;
+}
+
+.order-status-btn-group{
+    margin-top: 10px;
+}
+
+.orderIdDisplay{
+    text-align: center;
+}
+
+input[type="text"] , input[type="text"]:focus {
+    /* outline: none !important; */
+    box-shadow: none !important;
+    background-color: rgb(44, 43, 43);
+    outline: black;
+    border: 0;
+    color: aliceblue;
+}
+
+.btn:focus{
+    box-shadow: none !important;
+}
+
+.order-status-btn{
+    display: block;
+    width: 60%;
+    margin: 12px auto;
+    padding: 15px;
+    font-size: x-large;
+    border-radius: 100px;
+    pointer-events: none;
+    color: black;
+}
+
+.thankyouMsg{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    display: none;
+}
+
+.navbar-brand , .footer-brand ,.styleName{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.footer{
+    background-color: rgb(23, 23, 23);
+    position: sticky;
+}
+
+
+
+
+
