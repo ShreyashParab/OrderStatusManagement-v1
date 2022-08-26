@@ -115,8 +115,11 @@ function executeOrder(){
         document.getElementById('thankyouMsg').style.display = 'none'
 
         orderId = document.getElementById('orderId').value
+        if(orderId && orderStatusGreen)
+        {
+            orderStatusGreen = false
+        }
 
-       orderStatusGreen = false
     }
     if(orderId && orderId.match(validationOrderId) && orderStatusGreen == false){
     document.getElementById('orderIdDisplay').innerText = `Order status for ID : ${orderId}`
