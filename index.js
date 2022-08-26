@@ -118,6 +118,11 @@ function executeOrder(){
         if(orderId && orderStatusGreen)
         {
             orderStatusGreen = false
+            document.getElementById('invalid-orderid').style.display = 'none'
+        }
+        else{
+            document.getElementById('invalid-orderid').style.display = 'block'
+            document.getElementById('orderIdDisplay').innerText = ''
         }
 
     }
