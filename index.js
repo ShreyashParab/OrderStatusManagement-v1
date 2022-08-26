@@ -127,6 +127,7 @@ function executeOrder(){
 
     }
     if(orderId && orderId.match(validationOrderId) && orderStatusGreen == false){
+    document.getElementById('invalid-orderid').style.display = 'none'
     document.getElementById('orderIdDisplay').innerText = `Order status for ID : ${orderId}`
     document.getElementById('orderId').value = ''   
     orderPlaced()
